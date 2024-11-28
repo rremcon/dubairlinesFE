@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+import React from "react";
+import {Navigate, Route, Routes} from "react-router-dom";
+import Home from "./Home";
+import logo from "./assets/logodubairlines.png";
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      <>
+        {/*<header id="header" className="outer-content-container">*/}
+        {/*  <div className="inner-content-container-header">*/}
+
+        {/*    <LogoBig*/}
+        {/*        img={logo}*/}
+        {/*        imgTitle="logo"*/}
+        {/*    />*/}
+
+        {/*    <Nav/>*/}
+
+        {/*  </div>*/}
+
+        {/*</header>*/}
+
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+        </Routes>
+
+        {/*<footer id="footer" className="outer-content-container">*/}
+        {/*  <div className="inner-content-container">*/}
+        {/*    dubairlines.com &copy; 2025*/}
+        {/*  </div>*/}
+        {/*</footer>*/}
+
+      </>
+
   );
 }
 
