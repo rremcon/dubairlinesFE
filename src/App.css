@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+
+
+/* ------------------------------- GLOBAL STYLES -------------------------------- */
+
+:root {
+
+  --mint: #48c8bd;
+  --blue: #419FDAFF;
+
+  --red: #e83131;
+  --orange: #ffa500;
+  --black: #0C0C0C;
+  --grey: #7A7A7A;
+  --white: #ffffff;
+  --orangered: #FF4500FF;
+  --green: #008B8BFF;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Avenir, Arial, sans-serif;
+  font-size: 20px;
+  background-color: var(--white);
+  text-align: center;
+}
+
+
+/* ---------------------------------------- REUSABLES ----------------------- */
+
+
+.outer-content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.inner-content-container {
+  flex-basis: 1400px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  margin: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.default-text-restrictor {
+  max-width: 850px;
+  text-align: center;
+}
+
+.default-area-padding {
+  padding: 20px 0;
+}
+
+
+
+/* --------------------------------------- AREAS ---------------------------------------- */
+
+
+/* --------------------------------------- HEADER ------------------------- */
+
+
+.inner-content-container-header {
+  flex-basis: 1400px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.image-wrapper-small {
+  max-width: 100px;
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+
+
+.image-wrapper-big {
+  max-width: 400px;
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+
+
+img {
+  max-width: 100%
+}
+
+
+
+/* ----------------------------------------- MAIN ------------------------- */
+
+
+main {
+  display: flex;
+  justify-content: center;
+  /*font-size: 16px;*/
+  /*margin: 10px;*/
+  /*max-width: 1000px;*/
+}
+
+
+.page-title {
+  text-align: center;
+  color: var(--red);
+}
+
+.page-container {
+  font-size: 20px;
+}
+
+
+.page-container img {
+  width: 30%;
+}
+
+
+.service-tile__icon {
+  /*width: 100%;*/
+  border-radius: 100px;
+}
+
+
+.choice-item {
+  width: 200px;
+  height: 250px;
+  margin-top: 1em;
+  border-radius: 5px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.choice-item img {
+  width: 200px;
+  height: 200px;
+}
+
+
+/* ----------------------------------------- GRID -------------------------------- */
+
+
+.grid-service-container {
+  /*display: grid;*/
+  /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+
+  display: flex;
+  flex-direction: row;
+}
+
+
+.grid-service-tile {
+  /*flex-basis: 384px;*/
+  flex-basis: 480px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 10px;
+  /*background-color: var(--blue);*/
+  /*border: 2px solid #c6572f;*/
+  /*border-radius: 40px;*/
+  border-radius: 100%;
+  box-shadow: 0 11px 16px 0 rgba(0, 0, 0, 0.2);
+  /*color: #617d98;*/
+  font-size: 16px;
+}
+
+
